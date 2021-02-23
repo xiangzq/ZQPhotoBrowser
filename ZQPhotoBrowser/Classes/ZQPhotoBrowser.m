@@ -10,7 +10,7 @@
 #import <Photos/Photos.h>
 #import "UIImageView+WebCache.h"
 #import "ZQBrowserImageView.h"
-#import "ZQPhotoItemView.h"
+#import "ZQPhotoBrowserConfig.h"
 
 @interface ZQPhotoBrowser ()
 @property (nonatomic,strong) UIScrollView *scrollView;
@@ -159,7 +159,12 @@
     ZQBrowserImageView *currentImageView = (ZQBrowserImageView *)recognizer.view;
     NSInteger tag = currentImageView.tag;
     UIView *sourceView = [self currentFatherView:tag];
-    CGRect targetTemp = sourceView.frame;
+    CGRect targetTemp;
+    if ([sourceView isKindOfClass:[UICollectionViewCell class]]) {
+        targetTemp = [_sourceImageView convertRect:sourceView.frame toView:self];
+    } else {
+        targetTemp = sourceView.frame;
+    }
     UIImageView *tempView = [[UIImageView alloc] init];
     tempView.contentMode = sourceView.contentMode;
     tempView.clipsToBounds = YES;
@@ -318,16 +323,17 @@
 
 /// 当前父视图缩略图
 - (UIView *) currentFatherView:(NSInteger) index {
-    NSMutableArray *itemViews = @[].mutableCopy;
     UIView *sourceView = self.sourceImageView;
     UIView *superView = sourceView.superview;
     NSArray *views = superView.subviews;
-    [views enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:[ZQPhotoItemView class]]) [itemViews addObject:obj];
-    }];
-    if (itemViews.count > index) {
-        return [itemViews objectAtIndex:index];
+    if (views.count > index) {
+        return [views objectAtIndex:index];
     } else {
+        if ([_sourceImageView isKindOfClass:[UICollectionView class]]) {
+            UICollectionView *view = (UICollectionView *)_sourceImageView;
+            NSIndexPath *path = [NSIndexPath indexPathForItem:self.currentImageIndex inSection:0];
+            return [view cellForItemAtIndexPath:path];
+        }
         return _sourceImageView;
     }
 }

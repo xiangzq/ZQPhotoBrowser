@@ -13,17 +13,15 @@
 		59E5AAF2B6715032B5EA2200CF32286A /* Pods-ZQPhotoBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD65DF641F2A7B498F33E7918B8E173 /* Pods-ZQPhotoBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A51B6254D6904263473B072BFC32F81 /* Pods-ZQPhotoBrowser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA833B5BA8E99DE1CDE47DC05E0EA0A /* Pods-ZQPhotoBrowser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65327928B01DB2A7240F678C50A61D8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		74ACBFCC25E4ADEC001147EE /* ZQBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBFC025E4ADEC001147EE /* ZQBrowserImageView.m */; };
-		74ACBFCD25E4ADEC001147EE /* ZQPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBFC125E4ADEC001147EE /* ZQPhotoBrowser.m */; };
-		74ACBFCE25E4ADEC001147EE /* ZQWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBFC225E4ADEC001147EE /* ZQWaitingView.m */; };
-		74ACBFCF25E4ADEC001147EE /* ZQPhotoBrowserTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFC325E4ADEC001147EE /* ZQPhotoBrowserTool.h */; };
-		74ACBFD025E4ADEC001147EE /* ZQPhotoBrowserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBFC425E4ADEC001147EE /* ZQPhotoBrowserConfig.m */; };
-		74ACBFD125E4ADEC001147EE /* ZQPhotoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBFC525E4ADEC001147EE /* ZQPhotoItemView.m */; };
-		74ACBFD225E4ADEC001147EE /* ZQWaitingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFC625E4ADEC001147EE /* ZQWaitingView.h */; };
-		74ACBFD325E4ADEC001147EE /* ZQPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFC725E4ADEC001147EE /* ZQPhotoBrowser.h */; };
-		74ACBFD425E4ADEC001147EE /* ZQBrowserImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFC825E4ADEC001147EE /* ZQBrowserImageView.h */; };
-		74ACBFD525E4ADEC001147EE /* ZQPhotoBrowserConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFC925E4ADEC001147EE /* ZQPhotoBrowserConfig.h */; };
-		74ACBFD625E4ADEC001147EE /* ZQPhotoItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACBFCA25E4ADEC001147EE /* ZQPhotoItemView.h */; };
+		74ACC15225E4DF33001147EE /* ZQPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACC14925E4DF32001147EE /* ZQPhotoBrowser.h */; };
+		74ACC15325E4DF33001147EE /* ZQPhotoBrowserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC14A25E4DF32001147EE /* ZQPhotoBrowserConfig.m */; };
+		74ACC15425E4DF33001147EE /* ZQPhotoBrowserConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACC14B25E4DF32001147EE /* ZQPhotoBrowserConfig.h */; };
+		74ACC15525E4DF33001147EE /* ZQPhotoBrowserTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACC14C25E4DF33001147EE /* ZQPhotoBrowserTool.h */; };
+		74ACC15625E4DF33001147EE /* ZQWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC14D25E4DF33001147EE /* ZQWaitingView.m */; };
+		74ACC15725E4DF33001147EE /* ZQBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC14E25E4DF33001147EE /* ZQBrowserImageView.m */; };
+		74ACC15825E4DF33001147EE /* ZQBrowserImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACC14F25E4DF33001147EE /* ZQBrowserImageView.h */; };
+		74ACC15925E4DF33001147EE /* ZQWaitingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ACC15025E4DF33001147EE /* ZQWaitingView.h */; };
+		74ACC15A25E4DF33001147EE /* ZQPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC15125E4DF33001147EE /* ZQPhotoBrowser.m */; };
 		864D57B8314ACB16E31A2B8D32C8C0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D080AB41FDA2B5D093AF6911311A0620 /* ZQPhotoBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7DE8000605B04ED094D589B78F6F32 /* ZQPhotoBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8ED23E052E67124318A868AB4264327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -67,17 +65,15 @@
 		64ED662BD6CC0970CA36F01CFB3FFAC2 /* ZQPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
 		68C302F33CF4CD10E603D07F61C6755D /* Pods-ZQPhotoBrowser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQPhotoBrowser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74ACBFC025E4ADEC001147EE /* ZQBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQBrowserImageView.m; sourceTree = "<group>"; };
-		74ACBFC125E4ADEC001147EE /* ZQPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPhotoBrowser.m; sourceTree = "<group>"; };
-		74ACBFC225E4ADEC001147EE /* ZQWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQWaitingView.m; sourceTree = "<group>"; };
-		74ACBFC325E4ADEC001147EE /* ZQPhotoBrowserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowserTool.h; sourceTree = "<group>"; };
-		74ACBFC425E4ADEC001147EE /* ZQPhotoBrowserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPhotoBrowserConfig.m; sourceTree = "<group>"; };
-		74ACBFC525E4ADEC001147EE /* ZQPhotoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPhotoItemView.m; sourceTree = "<group>"; };
-		74ACBFC625E4ADEC001147EE /* ZQWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQWaitingView.h; sourceTree = "<group>"; };
-		74ACBFC725E4ADEC001147EE /* ZQPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowser.h; sourceTree = "<group>"; };
-		74ACBFC825E4ADEC001147EE /* ZQBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQBrowserImageView.h; sourceTree = "<group>"; };
-		74ACBFC925E4ADEC001147EE /* ZQPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowserConfig.h; sourceTree = "<group>"; };
-		74ACBFCA25E4ADEC001147EE /* ZQPhotoItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoItemView.h; sourceTree = "<group>"; };
+		74ACC14925E4DF32001147EE /* ZQPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowser.h; sourceTree = "<group>"; };
+		74ACC14A25E4DF32001147EE /* ZQPhotoBrowserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPhotoBrowserConfig.m; sourceTree = "<group>"; };
+		74ACC14B25E4DF32001147EE /* ZQPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		74ACC14C25E4DF33001147EE /* ZQPhotoBrowserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPhotoBrowserTool.h; sourceTree = "<group>"; };
+		74ACC14D25E4DF33001147EE /* ZQWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQWaitingView.m; sourceTree = "<group>"; };
+		74ACC14E25E4DF33001147EE /* ZQBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQBrowserImageView.m; sourceTree = "<group>"; };
+		74ACC14F25E4DF33001147EE /* ZQBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQBrowserImageView.h; sourceTree = "<group>"; };
+		74ACC15025E4DF33001147EE /* ZQWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQWaitingView.h; sourceTree = "<group>"; };
+		74ACC15125E4DF33001147EE /* ZQPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPhotoBrowser.m; sourceTree = "<group>"; };
 		7F086D594C6086108E121A72CC9BCB23 /* Pods-ZQPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		839C77BA6EF66D10DFA0E43B1D30CABA /* ZQPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A6F3183CD8A0B49AC034FBF1ACEE4A /* Pods_ZQPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,17 +191,15 @@
 		74ACBFBF25E4ADEC001147EE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				74ACBFC025E4ADEC001147EE /* ZQBrowserImageView.m */,
-				74ACBFC125E4ADEC001147EE /* ZQPhotoBrowser.m */,
-				74ACBFC225E4ADEC001147EE /* ZQWaitingView.m */,
-				74ACBFC325E4ADEC001147EE /* ZQPhotoBrowserTool.h */,
-				74ACBFC425E4ADEC001147EE /* ZQPhotoBrowserConfig.m */,
-				74ACBFC525E4ADEC001147EE /* ZQPhotoItemView.m */,
-				74ACBFC625E4ADEC001147EE /* ZQWaitingView.h */,
-				74ACBFC725E4ADEC001147EE /* ZQPhotoBrowser.h */,
-				74ACBFC825E4ADEC001147EE /* ZQBrowserImageView.h */,
-				74ACBFC925E4ADEC001147EE /* ZQPhotoBrowserConfig.h */,
-				74ACBFCA25E4ADEC001147EE /* ZQPhotoItemView.h */,
+				74ACC14F25E4DF33001147EE /* ZQBrowserImageView.h */,
+				74ACC14E25E4DF33001147EE /* ZQBrowserImageView.m */,
+				74ACC14925E4DF32001147EE /* ZQPhotoBrowser.h */,
+				74ACC15125E4DF33001147EE /* ZQPhotoBrowser.m */,
+				74ACC14B25E4DF32001147EE /* ZQPhotoBrowserConfig.h */,
+				74ACC14A25E4DF32001147EE /* ZQPhotoBrowserConfig.m */,
+				74ACC14C25E4DF33001147EE /* ZQPhotoBrowserTool.h */,
+				74ACC15025E4DF33001147EE /* ZQWaitingView.h */,
+				74ACC14D25E4DF33001147EE /* ZQWaitingView.m */,
 			);
 			name = Classes;
 			path = ZQPhotoBrowser/Classes;
@@ -278,13 +272,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74ACC15425E4DF33001147EE /* ZQPhotoBrowserConfig.h in Headers */,
+				74ACC15525E4DF33001147EE /* ZQPhotoBrowserTool.h in Headers */,
+				74ACC15925E4DF33001147EE /* ZQWaitingView.h in Headers */,
 				59E5AAF2B6715032B5EA2200CF32286A /* Pods-ZQPhotoBrowser_Example-umbrella.h in Headers */,
-				74ACBFD625E4ADEC001147EE /* ZQPhotoItemView.h in Headers */,
-				74ACBFCF25E4ADEC001147EE /* ZQPhotoBrowserTool.h in Headers */,
-				74ACBFD225E4ADEC001147EE /* ZQWaitingView.h in Headers */,
-				74ACBFD525E4ADEC001147EE /* ZQPhotoBrowserConfig.h in Headers */,
-				74ACBFD325E4ADEC001147EE /* ZQPhotoBrowser.h in Headers */,
-				74ACBFD425E4ADEC001147EE /* ZQBrowserImageView.h in Headers */,
+				74ACC15225E4DF33001147EE /* ZQPhotoBrowser.h in Headers */,
+				74ACC15825E4DF33001147EE /* ZQBrowserImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,12 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ACBFCC25E4ADEC001147EE /* ZQBrowserImageView.m in Sources */,
-				74ACBFD125E4ADEC001147EE /* ZQPhotoItemView.m in Sources */,
+				74ACC15725E4DF33001147EE /* ZQBrowserImageView.m in Sources */,
+				74ACC15A25E4DF33001147EE /* ZQPhotoBrowser.m in Sources */,
+				74ACC15325E4DF33001147EE /* ZQPhotoBrowserConfig.m in Sources */,
 				130D1C8B06A9C4A20D0A563FED05E843 /* Pods-ZQPhotoBrowser_Example-dummy.m in Sources */,
-				74ACBFCD25E4ADEC001147EE /* ZQPhotoBrowser.m in Sources */,
-				74ACBFD025E4ADEC001147EE /* ZQPhotoBrowserConfig.m in Sources */,
-				74ACBFCE25E4ADEC001147EE /* ZQWaitingView.m in Sources */,
+				74ACC15625E4DF33001147EE /* ZQWaitingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

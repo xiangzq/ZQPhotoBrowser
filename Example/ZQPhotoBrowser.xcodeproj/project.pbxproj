@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xiangzq;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = D69WXFPL3U;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,6 +497,7 @@
 			baseConfigurationReference = DD76D986844F1375E9F726F4 /* Pods-ZQPhotoBrowser_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D69WXFPL3U;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZQPhotoBrowser/ZQPhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "ZQPhotoBrowser/ZQPhotoBrowser-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 9A06EAF88D7AACE5FE656D45 /* Pods-ZQPhotoBrowser_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D69WXFPL3U;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZQPhotoBrowser/ZQPhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "ZQPhotoBrowser/ZQPhotoBrowser-Info.plist";
