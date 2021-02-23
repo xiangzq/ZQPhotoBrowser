@@ -269,7 +269,7 @@
 
 - (void) showFirstImage {
     UIView *sourceView = [self currentFatherView:self.currentImageIndex];
-    CGRect rect = sourceView.frame;
+    CGRect rect = [self.sourceImageView convertRect:sourceView.frame toView:self];
     UIImageView *tempView = [[UIImageView alloc] init];
     if ([[self currentImage] isKindOfClass:[UIImage class]]) {
         tempView.image = [self currentImage];
