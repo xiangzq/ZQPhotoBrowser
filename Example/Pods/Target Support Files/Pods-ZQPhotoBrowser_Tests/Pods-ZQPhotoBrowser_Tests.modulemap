@@ -1,0 +1,6 @@
+framework module Pods_ZQPhotoBrowser_Tests {
+  umbrella header "Pods-ZQPhotoBrowser_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ZQPhotoBrowser (0.1.0)
+
+DEPENDENCIES:
+  - ZQPhotoBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  ZQPhotoBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZQPhotoBrowser: ebd7abe14c98f96473b7ca866090adea6253257d
+
+PODFILE CHECKSUM: 630a8fea513bd6b182ad854b00c0d061d05c3106
+
+COCOAPODS: 1.10.1

@@ -61,9 +61,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A06EAF88D7AACE5FE656D45 /* Pods-ZQPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPhotoBrowser_Example.release.xcconfig"; path = "Target Support Files/Pods-ZQPhotoBrowser_Example/Pods-ZQPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B5018AA2AE3F7373D3B89518 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CC5DD0CA6CF7CFD9CF16D215 /* ZQPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZQPhotoBrowser.podspec; path = ../ZQPhotoBrowser.podspec; sourceTree = "<group>"; };
-		D8E3F7E0ACDB4BDF7A0CAA1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B5018AA2AE3F7373D3B89518 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC5DD0CA6CF7CFD9CF16D215 /* ZQPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZQPhotoBrowser.podspec; path = ../ZQPhotoBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8E3F7E0ACDB4BDF7A0CAA1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD76D986844F1375E9F726F4 /* Pods-ZQPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQPhotoBrowser_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZQPhotoBrowser_Example/Pods-ZQPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DDCF977FB3B6B01ACDA6FBDC /* Pods_ZQPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10CF2C773D42876B0AE6037 /* Pods_ZQPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				494EAC5F20C43F7AABC84B2A /* Pods-ZQPhotoBrowser_Tests.debug.xcconfig */,
 				6276AF6A90B5A66BEF89216D /* Pods-ZQPhotoBrowser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
