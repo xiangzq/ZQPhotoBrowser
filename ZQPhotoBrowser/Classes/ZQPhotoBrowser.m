@@ -133,11 +133,11 @@
     CGFloat y = 0;
     CGFloat w = _scrollView.frame.size.width - [ZQPhotoBrowserConfig shared].ZQPhotoBrowserImageViewMargin * 2;
     CGFloat h = _scrollView.frame.size.height;
-    [_scrollView.subviews enumerateObjectsUsingBlock:^(ZQBrowserImageView *obj, NSUInteger idx, BOOL *stop) {
+    [_imageViewItems enumerateObjectsUsingBlock:^(ZQBrowserImageView *obj, NSUInteger idx, BOOL *stop) {
         CGFloat x = [ZQPhotoBrowserConfig shared].ZQPhotoBrowserImageViewMargin + idx * ([ZQPhotoBrowserConfig shared].ZQPhotoBrowserImageViewMargin * 2 + w);
         obj.frame = CGRectMake(x, y, w, h);
     }];
-    _scrollView.contentSize = CGSizeMake(_scrollView.subviews.count * _scrollView.frame.size.width, 0);
+    _scrollView.contentSize = CGSizeMake(_imageViewItems.count * _scrollView.frame.size.width, 0);
     _scrollView.contentOffset = CGPointMake(self.currentImageIndex * _scrollView.frame.size.width, 0);
     if (!_hasShowedFistView) {
         [self showFirstImage];
@@ -197,7 +197,7 @@
 - (void)saveImage {
     if ([self hasPermissionForPhotoGallery]) {
         int index = _scrollView.contentOffset.x / _scrollView.bounds.size.width;
-        UIImageView *currentImageView = _scrollView.subviews[index];
+        UIImageView *currentImageView = _imageViewItems[index];
         UIImageWriteToSavedPhotosAlbum(currentImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
         UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] init];
         indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleLarge;
@@ -260,7 +260,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(UIView *)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:@"frame"]) {
         self.frame = object.bounds;
-        ZQBrowserImageView *currentImageView = _scrollView.subviews[_currentImageIndex];
+        ZQBrowserImageView *currentImageView = _imageViewItems[_currentImageIndex];
         if ([currentImageView isKindOfClass:[ZQBrowserImageView class]]) {
             [currentImageView clear];
         }
@@ -303,7 +303,7 @@
     CGFloat margin = 150;
     CGFloat x = scrollView.contentOffset.x;
     if ((x - index * self.bounds.size.width) > margin || (x - index * self.bounds.size.width) < - margin) {
-        ZQBrowserImageView *imageView = _scrollView.subviews[index];
+        ZQBrowserImageView *imageView = _imageViewItems[index];
         if (imageView.isScaled) {
             [UIView animateWithDuration:0.5 animations:^{
                 imageView.transform = CGAffineTransformIdentity;
@@ -323,19 +323,12 @@
 
 /// 当前父视图缩略图
 - (UIView *) currentFatherView:(NSInteger) index {
-    UIView *sourceView = self.sourceImageView;
-    UIView *superView = sourceView.superview;
-    NSArray *views = superView.subviews;
-    if (views.count > index) {
-        return [views objectAtIndex:index];
-    } else {
-        if ([_sourceImageView isKindOfClass:[UICollectionView class]]) {
-            UICollectionView *view = (UICollectionView *)_sourceImageView;
-            NSIndexPath *path = [NSIndexPath indexPathForItem:self.currentImageIndex inSection:0];
-            return [view cellForItemAtIndexPath:path];
-        }
-        return _sourceImageView;
+    if ([_sourceImageView isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *view = (UICollectionView *)_sourceImageView;
+        NSIndexPath *path = [NSIndexPath indexPathForItem:self.currentImageIndex inSection:0];
+        return [view cellForItemAtIndexPath:path];
     }
+    return _sourceImageView;
 }
 
 - (UIWindow *) window {
@@ -356,3 +349,4 @@
 }
 
 @end
+
